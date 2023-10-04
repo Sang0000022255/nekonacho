@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    unsigned int a,b,c;
+    scanf("%u%u%u",&a,&b,&c);   
+    if(a+b<c||a+c<b ||b+c<a)
+        printf("Khong hop le");
+    else
+    {
+        if(a==b && b==c && c==a)
+            printf("Deu");
+    else
+    {
+        if(a==b || b==c ||c==a)
+            printf("Can");
+    else
+    {
+    if (a*a==b+c*c ||b*b==a*a+c*c ||c*c==a*a+b*b)
+        printf("Vuong");
+        else
+        {
+            if (a*a>b*b+c*c ||b*b>a*a+c*c || c*c>a*a+b*b)
+                printf("Tu");
+            else
+                printf("Nhon");
+        }
+    }
+}
+}
+
+    return 0;
+}
